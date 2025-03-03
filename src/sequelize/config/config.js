@@ -1,12 +1,12 @@
 
 const Configuration = {
   development: {
-    username: "avnadmin",
-    password: "AVNS_Vmne3XujMKC87-p6KMM",
-    database: "nurturelabs",
-    host: "pg-f64fddc-ak4032777-4df8.l.aivencloud.com",
+    username: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB,
+    host: process.env.DATABASE_URI,
     dialect: "postgres",
-    port: 12181,
+    port: process.env.DATABASE_PORT,
     ssl: true,
     dialectOptions: {
       ssl: {
