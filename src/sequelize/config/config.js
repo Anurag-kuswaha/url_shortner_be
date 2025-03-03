@@ -1,4 +1,4 @@
-
+const process = require('process');
 const Configuration = {
   development: {
     username: process.env.POSTGRES_USER,
